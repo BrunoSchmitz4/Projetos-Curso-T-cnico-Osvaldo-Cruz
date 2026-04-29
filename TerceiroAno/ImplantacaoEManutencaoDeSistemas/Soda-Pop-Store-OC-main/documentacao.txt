@@ -1,0 +1,3 @@
+Dependências para serem instaladas:
+- npm i
+- npm install react-router-dom

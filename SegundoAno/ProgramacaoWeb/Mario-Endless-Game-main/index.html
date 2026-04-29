@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mario Jumpo</title>
+</head>
+
+<body>
+    <audio id="bg-music" loop>
+        <source src="audio/BackgroundMusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="score" class="score">Score: 0</div>
+
+    <!-- Game Over Message -->
+    <div id="game-over" class="game-over hidden">
+        <h1>Game Over!</h1>
+        <p>Pressione a tecla R para reiniciar</p>
+        <p id="final-score"></p>
+    </div>
+    <div class="game-board">
+        <img src="images/clouds.png" class="clouds">
+        <img src="./images/mario.gif" class="mario">
+        <img src="./images/pipe.png" class="pipe">
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        const audio = document.getElementById('bg-music');
+
+        // Retoma a música do tempo salvo ao carregar
+        window.addEventListener('load', () => {
+            const tempoSalvo = localStorage.getItem('tempoMusica');
+            if (tempoSalvo) {
+                audio.currentTime = tempoSalvo;
+            }
+        });
+
+        // Inicia a música após qualquer tecla pressionada
+        let musicaIniciada = false;
+        document.addEventListener('keydown', () => {
+            if (!musicaIniciada) {
+                audio.play();
+                musicaIniciada = true;
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
