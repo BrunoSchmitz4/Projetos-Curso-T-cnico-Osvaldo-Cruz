@@ -1,0 +1,142 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url('../img/backgroundImg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 8px solid #222;
+}
+
+.logo {
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+.btn-danger {
+    background-color: #e50914;
+    border-color: #e50914;
+}
+
+.btn-danger:hover {
+    background-color: #f40612;
+    border-color: #f40612;
+}
+
+.hero-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Ajustar altura para descontar o header */
+    padding: 0 5%;
+}
+
+.hero-text h1 {
+    font-size: 3.125rem;
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-text .fs-4 {
+        font-size: 1.125rem !important;
+    }
+}
+
+.email-form .form-control {
+    background-color: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    color: #fff;
+}
+
+.email-form .form-control:focus {
+    background-color: rgba(22, 22, 22, 0.7);
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+
+.email-form .form-floating > label {
+    color: #8c8c8c;
+}
+
+.email-form .form-floating > .form-control:focus ~ label,
+.email-form .form-floating > .form-control:not(:placeholder-shown) ~ label {
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+    color: #8c8c8c;
+}
+
+.email-form .btn-lg {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .email-form .btn-lg {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+}
+
+.cardPromo {
+  margin: 20px auto;
+  padding: 10px 0;
+  width: 70%;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(52, 39, 100);
+}
+
+.cardPromoContent {
+  text-align: start;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  min-height: 160px;
+}
+
+.footer-link, .footer-link a {
+  color: rgb(175, 175, 175);
+}
+
+.footerListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerList {
+  list-style: none;
+}
+
+.footerItem {
+  text-decoration: underline;
+  color: rgb(175, 175, 175);
+}

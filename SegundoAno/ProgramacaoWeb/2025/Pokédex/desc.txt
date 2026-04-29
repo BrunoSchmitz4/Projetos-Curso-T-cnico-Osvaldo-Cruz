@@ -1,0 +1,9 @@
+Esse projeto tem como objetivo fazer uso de dados reais
+armaxenados em um banco de dados de terceiro por meio
+do consumo de APIs prontas.
+Faremos uso de:
+HTML5
+CSS3
+Javascript
+PokeAPIv2 (com promisses)
+NodeJS

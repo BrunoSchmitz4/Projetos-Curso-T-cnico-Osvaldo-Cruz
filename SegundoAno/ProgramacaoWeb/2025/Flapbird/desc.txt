@@ -1,0 +1,2 @@
+Esse projeto tem como objetivo utilizar lógica de programação para
+criar uma aplicação levemente acentuada para o javascript, por meio de um jogo.

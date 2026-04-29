@@ -1,0 +1,4 @@
+Esse projeto tem como principal objetivo documentar de forma
+interativa e criativa todo o processo de aprendizado dos alunos
+nos outros projetos desta e outras matérias, assim, tornando
+a aplicação um portfólio WEB
